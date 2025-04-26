@@ -1,18 +1,18 @@
-node{
-    def app
+pipeline {
+    agent any
+    stages {
 
-    stage('checkout') {
+        stage('checkout') {
             steps {
                 echo "This is checkout step"
             }
         }
-
-    stage('build') {
-        steps {
-            echo "This is build step"
+        stage('build') {
+            steps {
+                echo "This is build step"
+            }
         }
-    }
-    stage('test') {
+        stage('test') {
             steps {
                 echo "This is test step"
             }
@@ -22,4 +22,5 @@ node{
                 echo "Successfully deployed Thank you !!!"
             }
         }
+    }
 }

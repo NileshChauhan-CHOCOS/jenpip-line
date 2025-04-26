@@ -2,22 +2,22 @@ node{
     def app
     stages {
 
-        stage('stage1') {
+        stage('checkout') {
             steps {
                 echo "This is checkout step"
             }
         }
-        stage('stage2') {
+        stage('build') {
             steps {
                 echo "This is build step"
             }
         }
-        stage('stage3') {
+        stage('test') {
             steps {
                 echo "This is test step"
             }
         }
-        stage('stage4') {
+        stage('deploy') {
             steps {
                 echo "Successfully deployed Thank you !!!"
             }

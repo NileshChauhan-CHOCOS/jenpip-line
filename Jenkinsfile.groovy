@@ -5,8 +5,8 @@ pipeline {
             steps {
                 script{
                     git branch: 'main',
-                    credentialsId : "4328481",
-                    url : 'git@github.com:NileshChauhan-CHOCOS/doc-cicd.git'
+                    credentialsId : "",
+                    url : ''
                 }
                 echo "This is checkout step"
             }

@@ -1,13 +1,8 @@
 pipeline {
     agent any
     stages {
-        stage('Git Checkout') {
+        stage('Checkout') {
             steps {
-                script{
-                    git branch: 'main',
-                    credentialsId : "",
-                    url : ''
-                }
                 echo "This is checkout step"
             }
         }
